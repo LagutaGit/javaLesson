@@ -1,14 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        int age = 1;
-        if (age >= 18){
-            System.out.println("Можно");
-        }
-        else if (age < 18) {
-            System.out.println("Нельзя");
-        }
-        else {
+        int weatherTemp = 4;
+        if (weatherTemp < 5) {
+            System.out.println("На улице холодно, нужно надеть шапку");
+        } else if (weatherTemp >= 5) {
+            System.out.println("Сегодня тепло, можно идти без шапки");
+        } else {
             System.out.println("Что-то не так");
         }
     }
+
 }
