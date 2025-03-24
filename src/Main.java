@@ -1,4 +1,7 @@
 public class Main {
+
+//    -------------- If else --------------
+
     public static void taskIf1() {
         int age = 18;
         if (age >= 18) {
@@ -91,7 +94,7 @@ public class Main {
         }
     }
 
-    public static void taskSwitch(){
+    public static void taskSwitch() {
         int dayOfWeekNumber = 3;
         switch (dayOfWeekNumber) {
             case 1:
@@ -120,8 +123,128 @@ public class Main {
         }
     }
 
+    //    ------------ Циклы ----------------------
+    public static void taskCycles1() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public static void taskCycles2() {
+//    Високостный
+        for (int i = 2020; i < 2077; i = i + 4) {
+            System.out.println("Високостный " + i);
+        }
+    }
+
+    public static void taskCycles3() {
+//    Посчитаем зп
+        int zp = 58500;
+        int total = 0;
+        int podrabotka = 20000;
+        for (int i = 0; i < 12; i++) {
+            total = total + zp;
+        }
+        for (int i = 0; i < 12; i = i + 3) {
+            total = total + podrabotka;
+        }
+        System.out.println(total);
+    }
+
+    public static void taskCycles4() {
+//        Все целые числа от 1 до 10
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public static void taskCycles5() {
+//    от 10 до 1
+        for (int i = 10; i > 1; i--) {
+            System.out.println(i);
+        }
+    }
+
+    public static void taskCycles6() {
+        for (int i = 0; i <= 17; i = i + 2) {
+            System.out.println(i);
+        }
+    }
+
+    public static void taskCycles7() {
+        for (int i = 10; i >= -10; i--) {
+            System.out.println(i);
+        }
+    }
+
+    public static void taskCycles8() {
+        for (int i = 7; i <= 100; i = i + 7) {
+            System.out.println(i);
+        }
+    }
+
+    public static void taskCycles9() {
+        int total = 0;
+        int vBanku = 29000;
+        for (int i = 1; i <= 12; i++) {
+            total = total + vBanku;
+        }
+        System.out.println(total);
+    }
+
+    public static void taskCycles10() {
+        float summa = 20000;
+
+        for (int i = 1; i <= 12; i++) {
+            summa = summa + (summa * 0.01f);
+        }
+        System.out.println(summa);
+    }
+
+    public static void taskCycles11() {
+        int count = 1;
+        int count2 = 2;
+        int count3 = 3;
+        int count4 = 4;
+        int count5 = 5;
+        int count6 = 6;
+        int count7 = 7;
+        int count8 = 8;
+        int count9 = 9;
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(count + "*" + i + " = " + count*i);
+        }
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(count2 + "*" + i + " = " + count * i);
+        }for (int i = 0; i <= 10; i++) {
+            System.out.println(count3 + "*" + i + " = " + count * i);
+        }for (int i = 0; i <= 10; i++) {
+            System.out.println(count4 + "*" + i + " = " + count * i);
+        }for (int i = 0; i <= 10; i++) {
+            System.out.println(count5 + "*" + i + " = " + count * i);
+        }for (int i = 0; i <= 10; i++) {
+            System.out.println(count6 + "*" + i + " = " + count * i);
+        }for (int i = 0; i <= 10; i++) {
+            System.out.println(count7 + "*" + i + " = " + count * i);
+        }for (int i = 0; i <= 10; i++) {
+            System.out.println(count8 + "*" + i + " = " + count * i);
+        }
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(count9 + "*" + i + " = " + count * i);
+        }
+    }
+
+    public static void taskCycles12() {
+        for (int number = 1; number <= 10; number++) {
+            System.out.println("Таблица умножения для " + number);
+            for (int i = 0; i <= 10; i++) {
+                System.out.println(number + "*" + i + " = " + (number * i));
+            }
+        }
+    }
+
     public static void main(String[] args) {
-//        Условные операторы
+//        ------------ Условные операторы-----------
 //        taskIf1();
 //        taskIf2();
 //        taskIf3();
@@ -130,11 +253,22 @@ public class Main {
 //        taskIf6();
 //        taskIf7();
 
-//        Тема Switch
+//        ----------------Тема Switch----------
 //        taskSwitch();
 
-//        Тема циклы
-
+//        ---------------Тема циклы--------------
+//    taskCycles1();
+//    taskCycles2();
+//        taskCycles3();
+//        taskCycles4();
+//        taskCycles5();
+//        taskCycles6();
+//        taskCycles7();
+//        taskCycles8();
+//        taskCycles9();
+//        taskCycles10();
+//        taskCycles11();
+        taskCycles12();
     }
 
 }
