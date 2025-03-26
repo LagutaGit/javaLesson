@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 
 //    -------------- If else --------------
@@ -212,21 +214,27 @@ public class Main {
         int count8 = 8;
         int count9 = 9;
         for (int i = 0; i <= 10; i++) {
-            System.out.println(count + "*" + i + " = " + count*i);
+            System.out.println(count + "*" + i + " = " + count * i);
         }
         for (int i = 0; i <= 10; i++) {
             System.out.println(count2 + "*" + i + " = " + count * i);
-        }for (int i = 0; i <= 10; i++) {
+        }
+        for (int i = 0; i <= 10; i++) {
             System.out.println(count3 + "*" + i + " = " + count * i);
-        }for (int i = 0; i <= 10; i++) {
+        }
+        for (int i = 0; i <= 10; i++) {
             System.out.println(count4 + "*" + i + " = " + count * i);
-        }for (int i = 0; i <= 10; i++) {
+        }
+        for (int i = 0; i <= 10; i++) {
             System.out.println(count5 + "*" + i + " = " + count * i);
-        }for (int i = 0; i <= 10; i++) {
+        }
+        for (int i = 0; i <= 10; i++) {
             System.out.println(count6 + "*" + i + " = " + count * i);
-        }for (int i = 0; i <= 10; i++) {
+        }
+        for (int i = 0; i <= 10; i++) {
             System.out.println(count7 + "*" + i + " = " + count * i);
-        }for (int i = 0; i <= 10; i++) {
+        }
+        for (int i = 0; i <= 10; i++) {
             System.out.println(count8 + "*" + i + " = " + count * i);
         }
         for (int i = 0; i <= 10; i++) {
@@ -241,6 +249,86 @@ public class Main {
                 System.out.println(number + "*" + i + " = " + (number * i));
             }
         }
+    }
+
+//    ----------------- Массивы -----------------------
+
+    public static void taskArrays0() {
+        int peremennaya = 25;
+
+        int[] mass = new int[10];
+        mass[0] = 5;
+
+        mass[1] = peremennaya;
+
+        int massSize = mass.length;
+        System.out.println(massSize);
+        char[] chars = new char[15];
+        double[] doubleArr = new double[10];
+        long[] numbers = new long[82];
+        boolean[] bools = new boolean[2];
+        int a = chars.length;
+        int b = doubleArr.length;
+        int c = numbers.length;
+        int d = bools.length;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+
+        int[] mass2 = new int[10];
+        for (int index = 0; index < mass2.length; index++) {
+           mass2[index] = index + 1;
+        }
+        System.out.println(Arrays.toString(mass2));
+//        int[] arr = new int[1];
+//        arr[1] = 3;
+//        System.out.println(Arrays.toString(arr));
+
+    }
+
+    public static void taskArrays1() {
+        int[] arrTask1 = new int[3];
+        arrTask1[0] = 1;
+        arrTask1[1] = 2;
+        arrTask1[2] = 3;
+        float[] arrTask2 = {1.57f,7.654f,9.986f};
+        System.out.println(Arrays.toString(arrTask2));
+    }
+
+    public static void taskArrays2() {
+        int[] massTask = {12, 32, 45, 78, 98, 45, 66, 5, 4, 8, 9};
+        for (int index = 0; index < massTask.length; index++) {
+            System.out.println(massTask[index]);
+        }
+    }
+
+    public static void taskArrays3() {
+
+    }
+
+    public static void taskArrays4() {
+
+    }
+
+    public static void taskArrays5() {
+
+    }
+
+    public static void taskArrays6() {
+
+    }
+
+    public static void taskArrays7() {
+
+    }
+
+    public static void taskArrays8() {
+
+    }
+
+    public static void taskArrays9() {
+
     }
 
     public static void main(String[] args) {
@@ -268,7 +356,18 @@ public class Main {
 //        taskCycles9();
 //        taskCycles10();
 //        taskCycles11();
-        taskCycles12();
+//        taskCycles12();
+//        taskArrays0();
+//        taskArrays1();
+        taskArrays2();
+//        taskArrays3();
+//        taskArrays4();
+//        taskArrays5();
+//        taskArrays6();
+//        taskArrays7();
+//        taskArrays8();
+//        taskArrays9();
+
     }
 
 }
