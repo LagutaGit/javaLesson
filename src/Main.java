@@ -278,7 +278,7 @@ public class Main {
 
         int[] mass2 = new int[10];
         for (int index = 0; index < mass2.length; index++) {
-           mass2[index] = index + 1;
+            mass2[index] = index + 1;
         }
         System.out.println(Arrays.toString(mass2));
 //        int[] arr = new int[1];
@@ -292,7 +292,7 @@ public class Main {
         arrTask1[0] = 1;
         arrTask1[1] = 2;
         arrTask1[2] = 3;
-        float[] arrTask2 = {1.57f,7.654f,9.986f};
+        float[] arrTask2 = {1.57f, 7.654f, 9.986f};
         System.out.println(Arrays.toString(arrTask2));
     }
 
@@ -304,11 +304,24 @@ public class Main {
     }
 
     public static void taskArrays3() {
-
+        int[] massTask = {12, 32, 45, 78, 98, 45, 66, 5, 4, 8, 9};
+        for (int index = 0; index < massTask.length; index++) {
+            System.out.println(massTask[index]);
+        }
+        for (int index = massTask.length - 1; index >= 0; index--) {
+            System.out.println(massTask[index]);
+        }
     }
 
     public static void taskArrays4() {
+        int[] array1 = {99, 98, 97, 96, 95, 94, 93, 92, 1};
+        int[] array2 = {99, 98, 97, 96, 95, 94, 93, 92, 1};
 
+        if (array1.equals(array2)) {
+            System.out.println("Равны");
+        } else {
+            System.out.println("Не равны");
+        }
     }
 
     public static void taskArrays5() {
@@ -330,8 +343,15 @@ public class Main {
     public static void taskArrays9() {
 
     }
+    public static void privetNastya(){
+        System.out.println("Привет Настя");
+    }
+
+
 
     public static void main(String[] args) {
+        privetNastya();
+
 //        ------------ Условные операторы-----------
 //        taskIf1();
 //        taskIf2();
@@ -359,9 +379,9 @@ public class Main {
 //        taskCycles12();
 //        taskArrays0();
 //        taskArrays1();
-        taskArrays2();
+//        taskArrays2();
 //        taskArrays3();
-//        taskArrays4();
+        taskArrays4();
 //        taskArrays5();
 //        taskArrays6();
 //        taskArrays7();
